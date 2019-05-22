@@ -1,0 +1,11 @@
+<h1>Word Count</h1>
+<a href="{% url 'about' %}">About</a>
+<!-- After define the count.html give the action name="count"-->
+<!-- action="count"-->
+<form action="{% url 'count' %}">
+    <!--Here the Count name should be same as URL.PY path('count/', views.count, name='count')-->
+    <textarea name="fulltext" cols="30" rows="10" id="txt_area"></textarea>
+    <br/>
+    <input type="Submit" value="Count!"/>
+
+</form>
